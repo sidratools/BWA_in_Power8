@@ -22,12 +22,27 @@ The BWAKIT provides pre-compiled binaries for x86_64 architecture and end-to-end
 	
 ### Modified source codes and patches for BWAKIT porting (verion 0.1)
 
-		1. ksw-bwa.c 
-		2. ksw-trimadap.c 
+		1. ksw-bwa.c (https://github.com/sidratools/BWA_in_Power8/blob/master/IBM/ksw-bwa.c)
+		2. ksw-trimadap.c (https://github.com/sidratools/BWA_in_Power8/blob/master/IBM/ksw-trimadap.c)
 		3. vec128int.h
 			wget --no-check-certificatehttps://www.ibm.com/developerworks/community/files/form/anonymous/api/library/b8b3a7b1-379f-4140-9d5f-73f658d8b2f5/document/79b19df7-a672-4908-920a-8505c2f09d68/version/61956e94-966c-49c9-bfb4-177168cf6b18/media/veclib.1.0.2.tar
 			tar xvf veclib.1.0.2.tar 
 			cp veclib.1.0.2/include/vec128int.h 
-		4. k8_patch 
+		4. k8_patch (https://github.com/sidratools/BWA_in_Power8/blob/master/IBM/k8_patch )
 
+## Step-by-Step procedure for Porting BWAKIT
+
+ Please refere this document: https://openpowerfoundation.org/wp-content/uploads/2017/09/BWAKIT_port_sidra.pdf 
+ 
+ ## Latest Open POWER binaries for bioinformatics
+ 
+ Many bioinformatics tools are ported to OpenPOWER and maintained at “biobuilds.org”. Please refer to “biobuilds.org” first to check if your code is already ported.
+ 
+ ## Contributions
+ This porting effort is in collaboration within members of the Personalized Medicine Workgroup and Sidra medical and Research Center. 
+ 
+ ## Acknowledgement 
+ 
+ We gratefully acknowledge the access that was provided to OpenPOWER hardware at Forschungszentrum Jülich Supercomputing Center. Special thanks goes to Dr. Dirk Pleiter and Dr. Marcus Richter, Jülich Supercomputing Center, Germany. Additionally, the authors gratefully thank the IBM team, including Mr. Ganesan Narayanasamy, OpenPOWER leader in Education and Research for facilitating the access to OpenPOWER system. Also, the authors would like to thank Mr. Jaideep Bajwa, Mr. Michael Dawson, and Dr. Yinhe Cheng for helping on V8, K8 and trimadap source code modifications for POWER architecture.
+ 
 
