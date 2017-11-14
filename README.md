@@ -22,5 +22,12 @@ The BWAKIT provides pre-compiled binaries for x86_64 architecture and end-to-end
 	
 ### Modified source codes and patches for BWAKIT porting (verion 0.1)
 
+	1. ksw-bwa.c 
+	2. ksw-trimadap.c 
+	3. vec128int.h
+		wget --no-check-certificatehttps://www.ibm.com/developerworks/community/files/form/anonymous/api/library/b8b3a7b1-379f-4140-9d5f-73f658d8b2f5/document/79b19df7-a672-4908-920a-8505c2f09d68/version/61956e94-966c-49c9-bfb4-177168cf6b18/media/veclib.1.0.2.tar
+		tar xvf veclib.1.0.2.tar 
+		cp veclib.1.0.2/include/vec128int.h 
+	4. k8_patch 
 
 
